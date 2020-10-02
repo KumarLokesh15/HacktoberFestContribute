@@ -1,26 +1,31 @@
 #include "calculator.h"
+#include <math.h>
 
 
-float addition(float firstNumber,float secondNumber)
+double addition(double firstNumber,double secondNumber)
 {
     return firstNumber+secondNumber;
 }
-float subtract(float firstNumber,float secondNumber)
+double subtract(double firstNumber,double secondNumber)
 {
     return firstNumber-secondNumber;
 }
-float multiplication(float firstNumber,float secondNumber)
+double multiplication(double firstNumber,double secondNumber)
 {
     return firstNumber*secondNumber;
 }
-float divide(float divident,float divisor)
+double divide(double divident,double divisor)
 {
     return divident/divisor;
 }
-float remainder(float divident,float divisor)
+double remainder(double divident,double divisor)
 {
     int firstNumberNew=(int)divident;
     int secondNumberNew=(int)divisor;
-    return firstNumberNew%secondNumberNew;
     
+    return firstNumberNew%secondNumberNew;
+}
+double Power(double firstNumber,double secondNumber)
+{
+    return pow(firstNumber,secondNumber);
 }
