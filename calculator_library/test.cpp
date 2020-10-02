@@ -1,18 +1,19 @@
 #include "calculator.h"
 #include<iostream>
+#include <math.h>
+using namespace std;
 int main()
 {
-    float firstNumber,secondNumber;
-    std::cout << "Enter two numbers to addition";
-    std::cin >> firstNumber >> secondNumber;
-    float x;
-    x=addition(firstNumber,secondNumber);
+    double firstNumber,secondNumber;
+    cout << "Enter two numbers to addition";
+    cin >> firstNumber >> secondNumber;
 
-    std::cout << "Sum :" << x << std::endl;
-    std::cout << "Subtraction :" << subtract(firstNumber,secondNumber) << std::endl;
-    std::cout << "Multiplication :" << multiplication(firstNumber,secondNumber) << std::endl;
-    std::cout << "Division :" << divide(firstNumber,secondNumber) << std::endl;
-    std::cout << "Remainder :" << remainder(firstNumber,secondNumber) << std::endl;
+    cout << "Sum :" << addition(firstNumber,secondNumber) << endl;
+    cout << "Subtraction :" << subtract(firstNumber,secondNumber) << endl;
+    cout << "Multiplication :" << multiplication(firstNumber,secondNumber) << endl;
+    cout << "Division :" << divide(firstNumber,secondNumber) << endl;
+    cout << "Remainder :" << remainder(firstNumber,secondNumber) << endl;
+    cout << "Power :" << Power(firstNumber,SecondNumber) << endl;
 
 
     return 0;
